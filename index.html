@@ -874,7 +874,7 @@ function addSheet(wb,name,msgs,ds){
   var ws=XLSX.utils.aoa_to_sheet(rows);
   ws['!cols']=[{wch:3},{wch:18},{wch:22},{wch:70},{wch:10},{wch:8}];
   ws['!merges']=merges;
-  XLSX.utils.book_append_sheet(wb,ws.name||name,ws);
+  XLSX.utils.book_append_sheet(wb,ws,name);
 }
 
 </script>
